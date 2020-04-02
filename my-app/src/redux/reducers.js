@@ -97,9 +97,9 @@ function todos(state = [], action) {
     }
 } */
 
-function todoApp(state = {}, action) {
+/* function todoApp(state = {}, action) {
     return {
         visibilityFilter: visibilityFilter(state.visibilityFilter, action),
         todos: todos(state.todos, action)
     }
-}
+} */
