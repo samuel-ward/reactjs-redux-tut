@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import store from './redux/store';
-import { addTodo, toggleTodo, setVisibilityFilter, VisibilityFilters } from './redux/actions';
-
+import Footer from './components/Footer';
+import AddTodo from './containers/AddTodo';
+import VisibleTodoList from './containers/VisibleTodoList';
+/* import store from './redux/store';
+import { addTodo, toggleTodo, setVisibilityFilter, VisibilityFilters } from './redux/actions'; */
+/* 
 class App extends Component {
 
     test() {
@@ -20,8 +23,16 @@ class App extends Component {
 
     render () {
         this.test();
-        return <button></button>
+        return null
     }
-}
+} */
+
+const App = () => (
+    <div>
+        <AddTodo />
+        <VisibleTodoList />
+        <Footer />
+    </div>
+)
 
 export default App;
